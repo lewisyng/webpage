@@ -1,0 +1,21 @@
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+
+}
+
+#navbar__content {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}

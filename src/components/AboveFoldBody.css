@@ -1,0 +1,23 @@
+#aboveFoldBody {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+#aboveFoldBody__name {
+    display: flex;
+    justify-content: center;
+
+    /* font-size: max(7vw, 2rem); */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 6vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+#aboveFoldBodySlogan {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30vh;
+}
