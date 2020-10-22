@@ -1,12 +1,5 @@
 #app {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    background-color: #F8E8E8;
-}
-
-#aboveFold {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    color: #272424;
 }

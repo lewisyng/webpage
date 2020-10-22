@@ -1,0 +1,11 @@
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    z-index: 10;
+    /* position: absolute; */
+}
+
+#navbar__right {
+    display: flex;
+}

@@ -1,0 +1,14 @@
+#about {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto;
+}
+
+#about__content {
+    display: flex;
+}
+
+#about__content__image {
+    width: 40%;
+}

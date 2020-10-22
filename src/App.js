@@ -1,31 +1,32 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
-import Navbar from './components/Navbar';
-import AboveFoldBody from './components/AboveFoldBody';
+import AboveFold from './components/AboveFold';
+import Projects from './components/Projects';
+import NavbarOnScroll from './components/NavbarOnScroll'
+import About from './components/About'
+import Contact from './components/Contact'
 
 function App() {
+
+  const jump = h => {
+    var top = document.getElementById(h).offsetTop;
+    window.scrollTo(0, top); 
+  }
+
   return (
-    <Router>
       <div id="app">
-        <Navbar />
-        <Switch>
+        <AboveFold
+          linkClick={jump}
+        />
 
-          <Route exact path="/">
-            <div id="aboveFold">
-              <AboveFoldBody page="home" />
-            </div>
-          </Route>
-
-          <Route path="/projects">
-            <div id="aboveFold">
-              <AboveFoldBody page="projects" />
-            </div>
-          </Route>
-
-        </Switch>
+        <NavbarOnScroll />
+        <Projects />
+        <About />
+          {/* vielleicht vorstellen der social media platformen, die ich betreibe */}
+            {/* brand als lehrer? */}
+        {/* kontakt */}
+        <Contact />
       </div>
-    </Router>
   );
 }
 

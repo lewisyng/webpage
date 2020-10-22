@@ -1,12 +1,23 @@
-#navbar {
+#navbar__abovefold {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 2rem;
-
+    font-size: 2rem;
 }
 
-#navbar__content {
-    display: flex;
+.navbar__abovefold__item {
+    width: 20%;
+}
+
+@media (max-width:700px){
+    #navbar__abovefold {
+        flex-direction: column;
+    }
+    .navbar__abovefold__item {
+        padding: 1rem 0;
+        font-size: 2rem;
+    }
 }
 
 a {
@@ -14,6 +25,7 @@ a {
     color: black;
     padding: 1rem;
     font-weight: bold;
+    cursor: pointer;
 }
 
 a:hover {

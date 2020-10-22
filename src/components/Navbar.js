@@ -1,31 +1,23 @@
 import React from 'react';
 import './Navbar.css';
-import {Link} from "react-router-dom";
 
-function Navbar() {
+function Navbar(props) {
     return (
-        <div id="navbar">
-            <div id="navbar__logo">
-                <Link to="/">
-                    LY
-                </Link>
+        <div id="navbar__abovefold">
+            <div className="navbar__abovefold__item" id="navbar__abovefold__projects">
+                <a onClick={() => props.jump("projects__container")}>
+                    Projekte
+                </a>
             </div>
-            <div id="navbar__content">
-                <div id="navbar__projects">
-                    <Link to="/projects">
-                        Projekte
-                    </Link>
-                </div>
-                <div id="navbar__about">
-                    <Link to="/about">
-                        Über
-                    </Link>
-                </div>
-                <div id="navbar__contact">
-                    <Link to="/contact">
-                        Kontakt
-                    </Link>
-                </div>
+            <div className="navbar__abovefold__item" id="navbar__abovefold__about">
+                <a href="">
+                    Über
+                </a>
+            </div>
+            <div className="navbar__abovefold__item" id="navbar__abovefold__contact">
+                <a href="">
+                    Kontakt
+                </a>
             </div>
         </div>
     )

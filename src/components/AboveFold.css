@@ -1,0 +1,14 @@
+#aboveFold {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    height: 100vh;
+    background-image: url(../assets/pexels-photo-325185.jpeg);
+    background-position-x: center;
+}
+
+#aboveFold__name {
+    font-size: 5vw;
+    font-weight: bold;
+}
