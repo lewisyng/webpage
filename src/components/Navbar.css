@@ -1,21 +1,129 @@
-#navbar {
+.navbar {
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
-
+    align-items: center;
+    padding: 2rem 0;
+    font-size: 1.3rem;
 }
 
-#navbar__content {
-    display: flex;
+.navbar:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 90%;
+    height: 0px;
+    background-color: #474e57;
+    ;
+    transition: height .4s ease;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-    padding: 1rem;
+.navbar.background:before {
+    height: 100%;
+}
+
+.navbar__items {
+    display: none;
+    visibility: 0%;
+    transition: visibility 1s;
+}
+
+.navbar__items.checked {
+    display: block;
+    visibility: 100%;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar__item {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 2;
+}
+
+.navbar a {
+    color: white;
     font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+.hamburger {
+    position: relative;
+    width: 50px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.line {
+    position: absolute;
+    height: 4px;
+    width: 35px;
+    background: #fff;
+    transition: 0.5s;
+}
+
+.line:nth-child(1) {
+    top: 0px;
+}
+
+.line:nth-child(2) {
+    top: 12px;
+}
+
+.line:nth-child(3) {
+    top: 24px;
+}
+
+.hamburger.checked .line:nth-child(1) {
+    transform: translateY(12px) rotate(-45deg);
+}
+
+.hamburger.checked .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.checked .line:nth-child(3) {
+    transform: translateY(-12px) rotate(45deg);
+}
+
+@media (min-width: 600px) {
+    .hamburger {
+        display: none;
+    }
+
+    .navbar__items {
+        position: static;
+        display: flex;
+    }
+
+    .navbar__item {
+        padding: 0 1rem;
+        font-size: 1.3rem;
+    }
+
+    .navbar a {
+        position: relative;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .navbar a:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        right: 0;
+        background-color: var(--pageYellow);
+        transition: width .2s ease;
+    }
+
+    .navbar a:hover::after {
+        width: 100%;
+        left: 0%;
+    }
 }
