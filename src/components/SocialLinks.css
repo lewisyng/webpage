@@ -1,0 +1,14 @@
+.socialLinks {
+    margin-top: auto;
+    margin-bottom: 3rem;
+}
+
+.socialLink__name {
+    text-align: center;
+}
+
+.socialLinks__list {
+    display: flex;
+    border-top: 5px solid var(--pageYellow);
+    padding-top: 3rem;
+}

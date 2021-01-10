@@ -1,26 +1,47 @@
-import React from 'react';
-import './Navbar.css';
+import React, { useState } from "react";
+import "./Navbar.css";
+import Logo from "./Logo";
 
-function Navbar(props) {
-    return (
-        <div id="navbar__abovefold">
-            <div className="navbar__abovefold__item" id="navbar__abovefold__projects">
-                <a onClick={() => props.jump("projects__container")}>
-                    Projekte
-                </a>
+import { Link } from "react-router-dom";
+
+function Navbar() {
+  const [toggleHamburger, setToggleHamburger] = useState(false);
+
+  return (
+    <div className={`navbar ${toggleHamburger ? "background" : ""}`}>
+      <div className="logo">
+        <Link to="/">
+          <Logo />
+        </Link>
+      </div>
+
+      <div
+        className={`hamburger ${toggleHamburger ? "checked" : ""}`}
+        onClick={() => setToggleHamburger(!toggleHamburger)}
+      >
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+
+      <div className={`navbar__items ${toggleHamburger ? "checked" : ""}`}>
+        {[
+          ["/projects", "Projekte"],
+          ["/about", "Über"],
+          ["/contact", "Kontakt"],
+        ].map((item) => {
+          return (
+            <div
+              className="navbar__item"
+              onClick={() => setToggleHamburger(false)}
+            >
+              <Link to={item[0]}>{item[1]}</Link>
             </div>
-            <div className="navbar__abovefold__item" id="navbar__abovefold__about">
-                <a href="">
-                    Über
-                </a>
-            </div>
-            <div className="navbar__abovefold__item" id="navbar__abovefold__contact">
-                <a href="">
-                    Kontakt
-                </a>
-            </div>
-        </div>
-    )
+          );
+        })}
+      </div>
+    </div>
+  );
 }
 
-export default Navbar
+export default Navbar;
