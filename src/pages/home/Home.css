@@ -7,10 +7,10 @@
 }
 
 .home__name {
-    font-size: 6rem;
+    font-size: max(3rem, 10vw);
     font-weight: bold;
     text-align: center;
     font-family: 'Playfair Display', serif !important;
     padding-bottom: 3rem;
-    margin: auto 0;
+    margin: 3rem 0 0 0;
 }

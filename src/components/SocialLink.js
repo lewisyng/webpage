@@ -5,9 +5,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function SocialLink(props) {
   const { item } = props;
 
+  
+
   return (
     <div className="socialLink">
-      <div className="socialLink__item">
         <a
           onMouseOut={props.mouseOutOfLink}
           onMouseOver={() => props.handleMouseOverLink(item.name)}
@@ -18,7 +19,6 @@ function SocialLink(props) {
         >
           <FontAwesomeIcon size="4x" icon={item.icon} color="white" />
         </a>
-      </div>
     </div>
   );
 }

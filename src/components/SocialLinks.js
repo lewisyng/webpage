@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { homelinks } from "../js/homelinks";
 import SocialLink from "./SocialLink";

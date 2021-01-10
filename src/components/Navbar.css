@@ -2,11 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.0rem 0;
+    padding: 2rem 0;
     font-size: 1.3rem;
 }
-
-
 
 .navbar:before {
     content: "";
@@ -14,7 +12,8 @@
     top: 0;
     width: 90%;
     height: 0px;
-    background-color: #474e57;;
+    background-color: #474e57;
+    ;
     transition: height .4s ease;
 }
 
@@ -25,7 +24,6 @@
 .navbar__items {
     display: none;
     visibility: 0%;
-    /* transition-delay: 1s; */
     transition: visibility 1s;
 }
 
@@ -94,14 +92,17 @@
     .hamburger {
         display: none;
     }
+
     .navbar__items {
         position: static;
         display: flex;
     }
+
     .navbar__item {
         padding: 0 1rem;
         font-size: 1.3rem;
     }
+
     .navbar a {
         position: relative;
         color: white;
@@ -109,7 +110,7 @@
         cursor: pointer;
         text-decoration: none;
     }
-    
+
     .navbar a:after {
         content: "";
         position: absolute;
@@ -120,7 +121,7 @@
         background-color: var(--pageYellow);
         transition: width .2s ease;
     }
-    
+
     .navbar a:hover::after {
         width: 100%;
         left: 0%;

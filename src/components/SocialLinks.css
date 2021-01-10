@@ -9,6 +9,37 @@
 
 .socialLinks__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 0 0 150px;
     border-top: 5px solid var(--pageYellow);
     padding-top: 3rem;
+}
+
+@media (any-hover: none) and (any-pointer: coarse) {
+
+    /* touchscreens */
+    .socialLink__name {
+        display: none;
+    }
+}
+
+@media (any-hover: none) and (any-pointer: fine) {
+
+    /* stylus */
+    .socialLink__name {
+        display: none;
+    }
+}
+
+@media (any-hover: hover) and (any-pointer: coarse) {
+
+    /* controllers */
+    .socialLink__name {
+        display: none;
+    }
+}
+
+@media (any-hover: hover) and (any-pointer: fine) {
+    /* mouse or touchpad */
 }

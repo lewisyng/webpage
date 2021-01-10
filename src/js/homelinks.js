@@ -20,10 +20,10 @@ export const homelinks = [
         icon: faMedium,
         target: "_blank"
     },
-    {
-        name: "Resume",
-        url: "/resume",
-        icon: faFile,
-        target: "_self"
-    },
+    // {
+    //     name: "Lebenslauf",
+    //     url: "/resume",
+    //     icon: faFile,
+    //     target: "_self"
+    // },
 ]
