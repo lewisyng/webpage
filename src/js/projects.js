@@ -36,14 +36,14 @@ export const projects = [
       webpage: "",
     },
   },
-  {
-    name: "Google Clone",
-    thumbnail: GoogleIMG,
-    stack: ["HTML", "CSS", "JS", "REACT", "Firebase"],
-    about: "GOOGLE CLONE",
-    links: {
-      github: "https://github.com/lewisyng/weatherdata",
-      webpage: "",
-    },
-  },
+  // {
+  //   name: "Google Clone",
+  //   thumbnail: GoogleIMG,
+  //   stack: ["HTML", "CSS", "JS", "REACT", "Firebase"],
+  //   about: "GOOGLE CLONE",
+  //   links: {
+  //     github: "https://github.com/lewisyng/weatherdata",
+  //     webpage: "",
+  //   },
+  // },
 ];

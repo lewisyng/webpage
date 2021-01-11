@@ -4,4 +4,8 @@
 
 .projectLink {
     padding: 0 1rem 0 0;
+    
 }
+ .projectLink path {
+     color: var(--textPrimary);
+ }

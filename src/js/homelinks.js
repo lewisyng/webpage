@@ -1,5 +1,6 @@
 import { faGithub, faMedium, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faFile } from "@fortawesome/free-regular-svg-icons";
+import { faEnvelope} from "@fortawesome/free-solid-svg-icons";
 
 export const homelinks = [
     {
@@ -20,6 +21,12 @@ export const homelinks = [
         icon: faMedium,
         target: "_blank"
     },
+    {
+        name: "Mail",
+        url: "mailto:lewisyoung1306@yahoo.de",
+        icon: faEnvelope,
+        target: ""
+    }
     // {
     //     name: "Lebenslauf",
     //     url: "/resume",

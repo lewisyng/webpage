@@ -10,7 +10,7 @@ function ProjectLinks(props) {
   return (
     <div className="projectLinks">
       <a
-        className="socialLink"
+        className="projectLink"
         href={links.webpage}
         rel="noopener noreferrer"
         target="_blank"
@@ -18,7 +18,7 @@ function ProjectLinks(props) {
         <FontAwesomeIcon size="2x" icon={faExternalLinkAlt} color="#808080" />
       </a>
       <a
-        className="socialLink"
+        className="projectLink"
         href={links.github}
         rel="noopener noreferrer"
         target="_blank"

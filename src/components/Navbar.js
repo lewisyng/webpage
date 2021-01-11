@@ -26,8 +26,9 @@ function Navbar() {
 
       <div className={`navbar__items ${toggleHamburger ? "checked" : ""}`}>
         {[
+          ["/", "Home"],
           ["/projects", "Projekte"],
-          ["/about", "Über"],
+          // ["/about", "Über"],
           ["/contact", "Kontakt"],
         ].map((item) => {
           return (
