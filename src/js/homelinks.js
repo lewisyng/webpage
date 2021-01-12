@@ -17,7 +17,7 @@ export const homelinks = [
     },
     {
         name: "Medium",
-        url: "https://medium.com/@lewisyoung1306",
+        url: "https://young-frontend.medium.com",
         icon: faMedium,
         target: "_blank"
     },

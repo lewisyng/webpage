@@ -9,8 +9,8 @@ function Contact() {
       <div className="infos">
         Lewis Young <br />
         Erkelenz - Deutschland <br />
-        Email: lewisyoung1306(at)yahoo.de <br />
-        <a href="mailto:lewisyoung1306@yahoo.de">Send Feedback</a>
+        lewisyoung1306(at)yahoo.de <br /> <br/>
+        <a href="mailto:lewisyoung1306@yahoo.de">Mail me!</a>
       </div>
       <SocialLinks />
     </div>

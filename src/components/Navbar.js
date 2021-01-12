@@ -28,7 +28,7 @@ function Navbar() {
         {[
           ["/", "Home"],
           ["/projects", "Projekte"],
-          // ["/about", "Über"],
+          ["/about", "Über mich"],
           ["/contact", "Kontakt"],
         ].map((item) => {
           return (
