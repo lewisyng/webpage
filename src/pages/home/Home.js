@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import SocialLinks from "../../components/SocialLinks";
+import Projects from "../projects/Projects";
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
         Lewis <br /> Young
       </div>
       <SocialLinks />
+      <Projects />
     </div>
   );
 }
