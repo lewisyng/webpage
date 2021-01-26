@@ -1,5 +1,5 @@
 import React from "react";
-import "./Project.css";
+import "./Project.sass";
 import ProjectTitle from "./ProjectTitle";
 import ProjectThumbnail from "./ProjectThumbnail";
 import ProjectLinks from "./ProjectLinks";

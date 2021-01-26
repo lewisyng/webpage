@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { homelinks } from "../js/homelinks";
 import SocialLink from "./SocialLink";
-import "./SocialLinks.css";
+import "./SocialLinks.sass";
 
 function SocialLinks() {
   const [hoveredLink, setHoveredLink] = useState(null);

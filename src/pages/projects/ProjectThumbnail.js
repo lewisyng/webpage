@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProjectThumbnail.css";
+import "./ProjectThumbnail.sass";
 
 function ProjectThumbnail(props) {
   return (

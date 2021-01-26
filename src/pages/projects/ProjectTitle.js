@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProjectTitle.css";
+import "./ProjectTitle.sass";
 
 function ProjectTitle(props) {
   return <div className="projectTitle">{props.name}</div>;

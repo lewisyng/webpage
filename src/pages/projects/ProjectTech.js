@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProjectTech.css";
+import "./ProjectTech.sass";
 
 function ProjectTech(props) {
   return (
