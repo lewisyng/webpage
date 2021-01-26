@@ -1,14 +1,8 @@
-import React from 'react';
-import './Logo.css'
-
+import React from "react";
+import "./Logo.sass";
 
 function Logo() {
-    
-    return (
-        <div className="logo">
-            ly
-        </div>
-    )
+  return <div className="logo">ly</div>;
 }
 
-export default Logo
+export default Logo;

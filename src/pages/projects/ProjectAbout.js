@@ -1,6 +1,6 @@
 import { Typography } from '@material-ui/core';
 import React from 'react';
-import './ProjectAbout.css';
+import './ProjectAbout.sass';
 
 function ProjectAbout(props) {
     return (

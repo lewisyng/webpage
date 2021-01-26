@@ -1,0 +1,83 @@
+@import '../../assets/styles/_colors.sass'
+
+.homeProjects__container
+    background-color: $secondaryBackgroundColor
+    padding: 0 0 4rem 0
+
+.hp__header
+    color: $textDark
+    text-align: center
+    font-weight: bold
+    font-size: 2rem
+    padding: 2rem 0
+
+.homeProjects
+    width: 95%
+    margin: 0 auto
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    color: $textBright
+    display: flex
+    justify-content: space-between
+
+    &__background
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        background-color: $primaryBackgroundColor
+        filter: blur(0px)
+        height: 100%
+        width: 100%
+        border-radius: 15px
+
+.hp__row
+    width: 100%
+    height: 400px
+    margin: 0 0 1rem 0
+
+    &.half
+        width: 100%
+        @media (min-width: 550px)
+            width: 49.5%
+
+.hp__infos__header,
+.hp__infos__body
+    text-shadow: 0 0 5px #575757
+
+.hp__infos
+    padding: 3rem 0 0 2rem
+    width: #{"min(90%, 700px)"}
+    font-size: 1.5rem
+
+    &__header
+        font-weight: bold
+        font-size: 2rem
+        margin: 0 0 0.5rem 0
+
+    &__buttons
+        margin: 1rem 0 0 0
+
+    .customButton
+        background-color: rgba(0,0,0,0)
+        border: 2px solid $btnYellow
+        margin: 0 0.5rem 0 0
+        padding: 0.5rem
+        border-radius: 5px
+        font-size: 1rem
+        color: $textBright
+        text-decoration: none
+
+        &:hover
+            cursor: pointer
+            background-color: $btnYellow
+            color: $textDark
+
+        &.filled
+            background-color: $btnYellow
+            color: $textDark
+
+            &:hover
+                background-color: $btnYellowHover
+                border: 2px solid $btnYellowHover
+                color: $textBright

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Navbar.css";
+import "./Navbar.sass";
 import Logo from "./Logo";
 
 import { Link } from "react-router-dom";
@@ -8,26 +8,27 @@ function Navbar() {
   const [toggleHamburger, setToggleHamburger] = useState(false);
 
   return (
-    <div className={`navbar ${toggleHamburger ? "background" : ""}`}>
-      <div className="logo">
+    <div className={`navbar ${toggleHamburger ? "open" : ""}`}>
+      <div className="navbar__logo">
         <Link to="/">
           <Logo />
         </Link>
       </div>
 
       <div
-        className={`hamburger ${toggleHamburger ? "checked" : ""}`}
+        className={`navbar__hamburger ${toggleHamburger ? "open" : ""}`}
         onClick={() => setToggleHamburger(!toggleHamburger)}
       >
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
+        <span class={`navbar__line one ${toggleHamburger ? "open" : ""}`}></span>
+        <span class={`navbar__line two ${toggleHamburger ? "open" : ""}`}></span>
+        <span class={`navbar__line three ${toggleHamburger ? "open" : ""}`}></span>
+        <div className={`splash ${toggleHamburger ? "open" : ""}`}></div>
       </div>
 
-      <div className={`navbar__items ${toggleHamburger ? "checked" : ""}`}>
+      <div className={`navbar__items ${toggleHamburger ? "open" : ""}`}>
         {[
           ["/", "Home"],
-          ["/projects", "Projekte"],
+          // ["/projects", "Projekte"],
           ["/about", "Über mich"],
           ["/contact", "Kontakt"],
         ].map((item) => {
