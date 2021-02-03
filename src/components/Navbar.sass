@@ -4,10 +4,10 @@
     display: flex
     justify-content: space-between
     align-items: center
-    padding: 2rem 0
+    padding: 0.5rem 0
     font-size: 1.3rem
-    margin: 0 2rem
     z-index: 10
+    background-color: $headerBackground
 
     &__items
         display: none
@@ -32,11 +32,13 @@
 
     &__logo
         position: relative
+        margin: 0 0 0 5%
 
     &__hamburger
         position: relative
         width: 35px
         height: 28px
+        margin: 0 5% 0 0
 
     &__line
         position: absolute
@@ -82,15 +84,13 @@
         transform: scale(1)
 
 @media (min-width: 720px)
-    .navbar
-        margin: 0 5rem
-
     .navbar__hamburger
         display: none
 
     .navbar__items
         position: static
         display: flex
+        margin: 0 5% 0 0
 
     .navbar__item
         padding: 0 1rem

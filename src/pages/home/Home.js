@@ -7,12 +7,10 @@ import HomeProjects from "./HomeProjects";
 function Home() {
   return (
     <div className="home">
-      <div className="home__aboveFold">
-        <div className="home__name">
-          Lewis <br /> Young
-        </div>
-        <SocialLinks />
+      <div className="home__name">
+        Lewis <br /> Young
       </div>
+      <SocialLinks />
       <HomeProjects />
     </div>
   );
