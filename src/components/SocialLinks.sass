@@ -1,42 +1,7 @@
 @import '../assets/styles/_colors.sass'
     
 .socialLinks
-    width: #{"min(80%, 500px)"}
-    margin: 0 auto
-
+    margin-left: auto
     &__list
         display: flex
-        width: 100%
-        flex-wrap: wrap
-        padding-top: 3rem
-        border-top: 3px solid $pageYellow
-
-        @media (min-width: 500px)
-            border-top: 5px solid $pageYellow
-
-.socialLink__name
-    height: 30px
-    text-align: center
-    color: $textBright
-    font-size: 1.2rem
-
-@media (any-hover: none) and (any-pointer: coarse)
-
-    /* touchscreens */
-    .socialLink__name
-        display: none
-
-@media (any-hover: none) and (any-pointer: fine)
-
-    /* stylus */
-    .socialLink__name
-        display: none
-
-@media (any-hover: hover) and (any-pointer: coarse)
-
-    /* controllers */
-    .socialLink__name
-        display: none
-
-@media (any-hover: hover) and (any-pointer: fine)
-    /* mouse or touchpad */
+        align-items: center

@@ -1,6 +1,5 @@
 import React from "react";
 import "./SocialLink.sass";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function SocialLink(props) {
   const { item } = props;
@@ -8,14 +7,20 @@ function SocialLink(props) {
   return (
     <div className="socialLink">
         <a
-          onMouseOut={props.mouseOutOfLink}
-          onMouseOver={() => props.handleMouseOverLink(item.name)}
           className="socialLink"
           href={item.url}
           rel="noopener noreferrer"
           target={item.target}
         >
-          <FontAwesomeIcon size="4x" icon={item.icon} color="white" />
+          <svg
+        style={{ fill: "white" }}
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        viewBox="0 0 24 24"
+      >
+          {item.icon}
+</svg>
         </a>
     </div>
   );

@@ -16,6 +16,8 @@ function Navbar() {
         </Link>
       </div>
 
+      <SocialLinks />
+
       <div
         className={`navbar__hamburger ${toggleHamburger ? "open" : ""}`}
         onClick={() => setToggleHamburger(!toggleHamburger)}

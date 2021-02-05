@@ -18,7 +18,6 @@ function Contact() {
         </p>
         <a href="mailto:lewisyoung1306@yahoo.de">Mail me!</a>
       </div>
-      <SocialLinks />
     </div>
   );
 }
