@@ -3,6 +3,7 @@ import "./Navbar.sass";
 import Logo from "./Logo";
 
 import { Link } from "react-router-dom";
+import SocialLinks from "./SocialLinks";
 
 function Navbar() {
   const [toggleHamburger, setToggleHamburger] = useState(false);
@@ -14,6 +15,8 @@ function Navbar() {
           <Logo />
         </Link>
       </div>
+
+      <SocialLinks />
 
       <div
         className={`navbar__hamburger ${toggleHamburger ? "open" : ""}`}

@@ -5,7 +5,7 @@ import "./HomeProjects.sass";
 function HomeProjects() {
   return (
     <div className="homeProjects__container">
-      <div className="hp__header">Meine aktuellen Projekte</div>
+      <div className="hp__header header">Meine aktuellen Projekte</div>
       <div className="homeProjects">
         {homeprojects.map((item) => {
           return (

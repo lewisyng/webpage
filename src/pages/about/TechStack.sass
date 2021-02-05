@@ -1,0 +1,39 @@
+@import '../../assets/styles/_colors'
+    
+.techStack
+    background-color: $secondaryBackgroundColor
+    width: 100%
+    color: $textDark
+    // height: 300px
+    display: flex
+    flex-direction: column
+    padding: 0 5%
+    padding-bottom: 4rem
+
+    &__header
+        text-align: center
+
+    &__list
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+
+    &__item
+        display: flex
+        justify-content: center
+        align-items: center
+        width: Max(20vw, 100px)
+        height: Max(20vw, 100px)
+        max-width: 200px
+        max-height: 200px
+        font-weight: bold
+        font-size: 1.2rem
+
+        &:nth-of-type(even)
+            background-color: $pageYellow
+            color: $textDark
+
+        &:nth-of-type(odd)
+            background-color: $primaryBackgroundColor
+            color: $textBright
+            

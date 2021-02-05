@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.sass";
 import Portrait from "../../assets/portrait.jpg";
+import TechStack from "./TechStack";
 
 function About() {
   return (
@@ -20,16 +21,16 @@ function About() {
             Die Welt ist im digitalen Umbruch... und wir sind mitten drin!
             <br /> <br />
             Mich faszinieren die Chancen, die sich aus dieser Entwicklung
-            ergeben. <br />
-            Im Mittelpunkt stehen für mich Webtechnologien, da sie die
+            ergeben. Im Mittelpunkt stehen für mich Webtechnologien, da sie die
             Vernetzung aller Menschen und Lebensbereiche ermöglichen, sowie
-            unzählige neue Geschäftsfelder erzeugen und alte revolutionieren.{" "}
+            unzählige neue Geschäftsfelder erzeugen und alte revolutionieren.
             <br /> <br />
             Ich liebe es neue Technologien zu lernen und damit selber auf die
             Digitalisierung Einfluss zu nehmen.
           </span>
         </div>
       </div>
+      <TechStack />
     </div>
   );
 }

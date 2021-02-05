@@ -1,13 +1,35 @@
 @import '../../assets/styles/_colors.sass'
-    
-.home__aboveFold
-    min-height: #{"calc(100vh - 122px)"}
-    margin: 0 0 2rem 0
 
-.home__name
-    font-size: #{"max(3rem, 10vw)"}
-    font-weight: bold
-    text-align: center
-    font-family: 'Playfair Display', serif !important
-    margin: 3rem 0 3rem 0
-    color: $textBright
+.home
+    display: flex
+    flex-direction: column
+        
+    &__name
+        font-size: #{"max(3rem, 10vw)"}
+        font-weight: bold
+        text-align: center
+        font-family: 'Playfair Display', serif !important
+        margin: 5rem 0
+        color: $textBright
+
+    &__callToAction
+        background-color: $pageYellow
+        height: 20vh
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        font-weight: bold
+        font-size: 2rem
+        color: $textDark
+        text-align: center
+
+        & >a
+            background-color: #003cff
+            padding: 1rem
+            margin: 1rem 0 0 0
+            color: $textBright
+            border-radius: 100px
+            font-size: 1rem
+            font-weight: normal
+            text-decoration: none
