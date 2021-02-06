@@ -1,4 +1,5 @@
 import React from "react";
+import LinkButtons from "../../assets/LinkButtons";
 import homeprojects from "../../js/homeprojects";
 import "./HomeProjects.sass";
 
@@ -20,22 +21,22 @@ function HomeProjects() {
                   <div className="hp__infos__header">{item.name}</div>
                   <div className="hp__infos__body">{item.description}</div>
                   <div className="hp__infos__buttons">
-                    <a
-                      className="customButton"
+                    <LinkButtons
+                      value="Github"
                       href={item.githubLink}
                       rel="noopener noreferrer"
                       target="_blank"
                     >
                       Github
-                    </a>
-                    <a
-                      className="customButton filled"
+                    </LinkButtons>
+                    <LinkButtons
+                      value="Ausprobieren"
                       href={item.pageLink}
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      Ausprobieren
-                    </a>
+                      Github
+                    </LinkButtons>
                   </div>
                 </div>
               </div>

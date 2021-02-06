@@ -2,13 +2,13 @@ import React from "react";
 import "./Home.sass";
 import HomeProjects from "./HomeProjects";
 
-import anime from 'animejs/lib/anime.es.js'
-
 function Home() {
   return (
     <div className="home">
-      <div className="home__name">
-        Lewis <br /> Young
+      <div className="home__aboveFold">
+        <div className="home__name">
+          Lewis <br /> Young
+        </div>
       </div>
       <HomeProjects />
       <div className="home__callToAction">
