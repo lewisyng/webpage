@@ -3,6 +3,7 @@ import "./About.sass";
 import Portrait from "../../assets/portrait.jpg";
 import TechStack from "./TechStack";
 import LinkButtons from "../../assets/LinkButtons";
+import codingImg from "../../assets/Coding2.svg"
 
 function About() {
   return (
@@ -32,20 +33,22 @@ function About() {
           </div>
         </div>
       </div>
-          <div className="about__why">
-            <div>
-              <strong>Die Welt liegt im digitalen Umbruch... und wir sind mitten drin!</strong>
-              <br /> <br />
-              Mich faszinieren die Chancen, die sich aus dieser Entwicklung
-              ergeben. Im Mittelpunkt stehen für mich Webtechnologien, da sie die
-              Vernetzung aller Menschen und Lebensbereiche ermöglichen, sowie
-              unzählige neue Geschäftsfelder erzeugen und alte revolutionieren.
-              <br /> <br />
-              Ich liebe es neue Technologien zu lernen und damit selber auf die
-              Digitalisierung Einfluss zu nehmen.
-            </div>
-            <img className="about__why__img" src="img/coding2.svg" alt="a"/>
-          </div>
+      <div className="about__why">
+        <div>
+          <strong>
+            Die Welt liegt im digitalen Umbruch... und wir sind mitten drin!
+          </strong>
+          <br /> <br />
+          Mich faszinieren die Chancen, die sich aus dieser Entwicklung ergeben.
+          Im Mittelpunkt stehen für mich Webtechnologien, da sie die Vernetzung
+          aller Menschen und Lebensbereiche ermöglichen, sowie unzählige neue
+          Geschäftsfelder erzeugen und alte revolutionieren.
+          <br /> <br />
+          Ich liebe es neue Technologien zu lernen und damit selber auf die
+          Digitalisierung Einfluss zu nehmen.
+        </div>
+        <img className="about__why__img" src={codingImg} alt="img" />
+      </div>
       <div className="about__techStack">
         <div className="subHeader">Mein Technologie-Stack</div>
         <TechStack />

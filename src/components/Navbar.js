@@ -22,16 +22,21 @@ function Navbar() {
         className={`navbar__hamburger ${toggleHamburger ? "open" : ""}`}
         onClick={() => setToggleHamburger(!toggleHamburger)}
       >
-        <span class={`navbar__line one ${toggleHamburger ? "open" : ""}`}></span>
-        <span class={`navbar__line two ${toggleHamburger ? "open" : ""}`}></span>
-        <span class={`navbar__line three ${toggleHamburger ? "open" : ""}`}></span>
+        <span
+          class={`navbar__line one ${toggleHamburger ? "open" : ""}`}
+        ></span>
+        <span
+          class={`navbar__line two ${toggleHamburger ? "open" : ""}`}
+        ></span>
+        <span
+          class={`navbar__line three ${toggleHamburger ? "open" : ""}`}
+        ></span>
         <div className={`splash ${toggleHamburger ? "open" : ""}`}></div>
       </div>
 
       <div className={`navbar__items ${toggleHamburger ? "open" : ""}`}>
         {[
           ["/", "Home"],
-          // ["/projects", "Projekte"],
           ["/about", "Über mich"],
           ["/contact", "Kontakt"],
         ].map((item) => {

@@ -15,14 +15,14 @@ function Contact() {
         <p>
           lewisyoung1306(at)yahoo.de <br /> <br />
         </p>
+        </div>
         <LinkButtons
-              value="Schreiben Sie mir!"
-              href="mailto:lewisyoung1306@yahoo.de"
-              rel=""
-              target=""
-              filled={true}
-            />
-      </div>
+          value="Schreiben Sie mir!"
+          href="mailto:lewisyoung1306@yahoo.de"
+          rel=""
+          target=""
+          filled={true}
+        />
     </div>
   );
 }

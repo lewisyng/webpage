@@ -11,7 +11,7 @@
         padding: 0 5%
 
         &__image
-            width: #{"min(90%, 300px)"}
+            width: Min(90%, 300px)
         
         &__information
             margin: 2rem 0 3rem 0
@@ -20,10 +20,13 @@
     &__why
         display: flex
         justify-content: space-around
-        padding: 3rem 5%
+        padding: 5rem 5% 3rem 5%
         background-color: $secondaryBackgroundColor
         color: $textDark
         font-size: 1.5rem
+
+        @media (max-width: 800px)
+            flex-direction: column
 
         & >div
             width: 50%
@@ -33,8 +36,10 @@
                 font-size: 1.3rem
         
         &__img
-            // height: 300px
-            width: 500px
+            max-width: 500px
+            width: 100%
+            @media (max-width: 800px)
+                margin: 4rem 0 0 0
 
     &__techStack
         background-color: $secondaryBackgroundColor
