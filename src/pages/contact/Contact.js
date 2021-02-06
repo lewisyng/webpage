@@ -1,11 +1,10 @@
 import React from "react";
-import SocialLinks from "../../components/SocialLinks";
+import LinkButtons from "../../assets/LinkButtons";
 import "./Contact.sass";
 
 function Contact() {
   return (
     <div className="contact">
-      <div className="pageHeader">Kontakt</div>
       <div className="infos">
         <p>
           Lewis Young <br />
@@ -16,7 +15,13 @@ function Contact() {
         <p>
           lewisyoung1306(at)yahoo.de <br /> <br />
         </p>
-        <a href="mailto:lewisyoung1306@yahoo.de">Mail me!</a>
+        <LinkButtons
+              value="Schreiben Sie mir!"
+              href="mailto:lewisyoung1306@yahoo.de"
+              rel=""
+              target=""
+              filled={true}
+            />
       </div>
     </div>
   );

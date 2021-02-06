@@ -1,0 +1,25 @@
+@import './styles/_colors'
+
+.linkButtons
+    margin: 0 0.5rem 0 0
+    background-color: rgba(0,0,0,0)
+    border: 2px solid $btnYellow
+    padding: 0.5rem
+    border-radius: 5px
+    font-size: 1rem
+    color: $textBright
+    text-decoration: none
+
+    &:hover
+        cursor: pointer
+        background-color: $btnYellow
+        color: $textDark
+
+    &.filled
+        background-color: $btnYellow
+        color: $textDark
+
+        &:hover
+            background-color: $btnYellowHover
+            border: 2px solid $btnYellowHover
+            color: $textBright

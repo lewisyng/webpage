@@ -4,11 +4,11 @@
     color: $textBright
     display: flex
     flex-direction: column
-    align-items: center
 
-    &__content
+    &__myself
         height: 100%
-        margin: 0 0 5rem 0
+        margin: 3rem 0 5rem 0
+        padding: 0 5%
 
         &__image
             width: #{"min(90%, 300px)"}
@@ -17,16 +17,41 @@
             margin: 2rem 0 3rem 0
             max-width: 700px
 
+    &__why
+        display: flex
+        justify-content: space-around
+        padding: 3rem 5%
+        background-color: $secondaryBackgroundColor
+        color: $textDark
+        font-size: 1.5rem
+
+        & >div
+            width: 50%
+            @media (max-width: 800px)
+                text-align: left
+                width: 90%
+                font-size: 1.3rem
+        
+        &__img
+            // height: 300px
+            width: 500px
+
+    &__techStack
+        background-color: $secondaryBackgroundColor
+        width: 100%
+        text-align: center
+
 .large
     font-weight: bold
     font-size: 2rem
 
 .medium
+    font-weight: normal
     font-size: 1.5rem
     line-height: 1.5
 
 @media (min-width: 1000px)
-    .about__content
+    .about__myself
         display: flex
 
         &__image
@@ -35,3 +60,5 @@
 
         &__information
             margin: 0 0 0 3rem
+.contactBtn
+    margin: 2rem 0

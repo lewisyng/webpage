@@ -5,7 +5,6 @@ import "./TechStack.sass";
 function TechStack() {
   return (
     <div className="techStack">
-      <div className="techStack__header header">Mein Techstack</div>
       <div className="techStack__list">
         {techStack.map((item) => {
           return (
