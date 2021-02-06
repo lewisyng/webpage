@@ -6,22 +6,22 @@ function SocialLink(props) {
 
   return (
     <div className="socialLink">
-        <a
-          className="socialLink"
-          href={item.url}
-          rel="noopener noreferrer"
-          target={item.target}
-        >
-          <svg
-        style={{ fill: "white" }}
-        xmlns="http://www.w3.org/2000/svg"
-        width="30"
-        height="30"
-        viewBox="0 0 24 24"
+      <a
+        className="socialLink"
+        href={item.url}
+        rel="noopener noreferrer"
+        target={item.target}
       >
+        <svg
+          style={{ fill: "white" }}
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+        >
           {item.icon}
-</svg>
-        </a>
+        </svg>
+      </a>
     </div>
   );
 }

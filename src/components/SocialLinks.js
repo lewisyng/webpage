@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { homelinks } from "../js/homelinks";
 import SocialLink from "./SocialLink";
 import "./SocialLinks.sass";

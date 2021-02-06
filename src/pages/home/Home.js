@@ -1,4 +1,5 @@
 import React from "react";
+import LinkButtons from "../../assets/LinkButtons";
 import "./Home.sass";
 import HomeProjects from "./HomeProjects";
 
@@ -12,8 +13,17 @@ function Home() {
       </div>
       <HomeProjects />
       <div className="home__callToAction">
-        Du gehst den Weg in die digitale Zukunft?
-        <a href="mailto:lewisyoung@yahoo.de">Dann schreib' mir!</a>
+        <span>
+          <strong>Sie gehen den Weg in die digitale Zukunft?</strong>
+        </span>
+        <LinkButtons
+          value="Dann sollten wir uns kennenlernen!"
+          href="mailto:lewisyoung1306@yahoo.de"
+          rel=""
+          target=""
+          filled={true}
+          backgroundcolor="blue"
+        />
       </div>
     </div>
   );

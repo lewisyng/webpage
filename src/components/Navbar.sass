@@ -84,35 +84,36 @@
         transform: scale(1)
 
 @media (min-width: 720px)
-    .navbar__hamburger
-        display: none
+    .navbar
+        &__hamburger
+            display: none
 
-    .navbar__items
-        position: static
-        display: flex
-        margin: 0 5% 0 0
+        &__items
+            position: static
+            display: flex
+            margin: 0 5% 0 0
 
-    .navbar__item
-        padding: 0 1rem
-        font-size: 1.3rem
+        &__item
+            padding: 0 1rem
+            font-size: 1.3rem
 
-    .navbar__item
-        position: relative
-        color: white
-        font-weight: bold
-        cursor: pointer
-        text-decoration: none
+        &__item
+            position: relative
+            color: white
+            font-weight: bold
+            cursor: pointer
+            text-decoration: none
 
-        &::after
-            content: ""
-            position: absolute
-            width: 0
-            height: 2px
-            bottom: 0
-            right: 0
-            background-color: $pageYellow
-            transition: width .2s ease
+            &::after
+                content: ""
+                position: absolute
+                width: 0
+                height: 2px
+                bottom: 0
+                right: 0
+                background-color: $pageYellow
+                transition: width .2s ease
 
-        &:hover::after
-            width: 100%
-            left: 0%
+            &:hover::after
+                width: 100%
+                left: 0%
