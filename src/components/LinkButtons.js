@@ -5,12 +5,9 @@ function LinkButtons(props) {
   return (
     <a
       href={props.href}
-      className={`linkButtons btn ${props.filled ? "filled" : ""}`}
-      style={
-        props.backgroundcolor === "blue"
-          ? { backgroundColor: "#003cff", color: "white" }
-          : {}
-      }
+      className={`linkButtons btn ${
+        props.color === "dark" ? "dark" : "bright"
+      }`}
       rel={props.rel}
       target={props.target}
     >

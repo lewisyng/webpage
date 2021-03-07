@@ -1,5 +1,5 @@
 import React from "react";
-import LinkButtons from "../../assets/LinkButtons";
+import LinkButtons from "../../components/LinkButtons";
 import "./Contact.sass";
 
 function Contact() {
@@ -21,7 +21,7 @@ function Contact() {
           href="mailto:lewisyoung1306@yahoo.de"
           rel=""
           target=""
-          filled={true}
+          color="bright"
         />
     </div>
   );

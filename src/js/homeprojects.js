@@ -23,7 +23,7 @@ const homeprojects = [
         description: "A Spotify Clone that utilizes the Spotify Web API to display the users playlists and the Spotify UI.",
         githubLink: "https://github.com/lewisyng/spotify-clone",
         pageLink: "https://spotify-clone-d5f01.web.app",
-        backgroundImg: "/img/homeweatherimg3.jpg",
+        backgroundImg: "/img/homespotifyimg.jpg",
         size: "half"
     },
 ]

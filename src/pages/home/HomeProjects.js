@@ -1,5 +1,5 @@
 import React from "react";
-import LinkButtons from "../../assets/LinkButtons";
+import LinkButtons from "../../components/LinkButtons";
 import homeprojects from "../../js/homeprojects";
 import "./HomeProjects.sass";
 
@@ -26,7 +26,8 @@ function HomeProjects() {
                       href={item.githubLink}
                       rel="noopener noreferrer"
                       target="_blank"
-                    >
+                      color="bright"
+                      >
                       Github
                     </LinkButtons>
                     <LinkButtons
@@ -34,6 +35,7 @@ function HomeProjects() {
                       href={item.pageLink}
                       rel="noopener noreferrer"
                       target="_blank"
+                      color="bright"
                     >
                       Github
                     </LinkButtons>

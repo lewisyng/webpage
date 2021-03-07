@@ -5,7 +5,6 @@ function SocialLink(props) {
   const { item } = props;
 
   return (
-    <div className="socialLink">
       <a
         className="socialLink"
         href={item.url}
@@ -22,7 +21,6 @@ function SocialLink(props) {
           {item.icon}
         </svg>
       </a>
-    </div>
   );
 }
 
