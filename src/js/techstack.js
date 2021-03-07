@@ -3,49 +3,36 @@ export const techStack = [
         name: "HTML",
         image: "",
         description: "",
-        color: "red"
     },
     {
-        name: "CSS",
+        name: "(S)CSS/SASS",
         image: "",
         description: "",
-        color: "blue"
-    },
-    {
-        name: "SASS",
-        image: "",
-        description: "",
-        color: "orange"
     },
     {
         name: "JavaScript",
         image: "",
         description: "",
-        color: "green"
-    },
-    {
-        name: "Webpack",
-        image: "",
-        description: "",
-        color: "grey"
-    },
-    {
-        name: "Bootstrap",
-        image: "",
-        description: "",
-        color: "red"
     },
     {
         name: "ReactJS",
         image: "",
         description: "",
-        color: "blue"
+    },
+    {
+        name: "Webpack",
+        image: "",
+        description: "",
+    },
+    {
+        name: "Bootstrap",
+        image: "",
+        description: "",
     },
     {
         name: "Node.js",
         image: "",
         description: "",
-        color: "orange"
     },
 ]
 

@@ -3,117 +3,98 @@
 .navbar
     display: flex
     justify-content: space-between
-    align-items: center
-    padding: 0.5rem 0
+    padding: 0.5rem 5%
     font-size: 1.3rem
     z-index: 10
     background-color: $headerBackground
 
+    & button
+        z-index: 100
+
     &__items
-        display: none
-        transition: background-color 2s
+        &__large
+            display: flex
 
-    &__items.open
-        display: block
-        position: absolute
-        left: 50%
-        top: 40%
-        transform: translate(-50%, -50%)
+            @media (max-width: 720px)
+                display: none
 
-    &__item
-        text-align: center
-        font-size: 2rem
-        line-height: 3
+            &__item
+                display: flex
+                padding: 0 1rem
+                font-size: 1.3rem
+                position: relative
+                color: white
+                font-weight: bold
+                cursor: pointer
+                text-decoration: none
+
+                &::after
+                    content: ""
+                    position: absolute
+                    width: 0
+                    height: 2px
+                    bottom: 0
+                    right: 0
+                    background-color: $pageYellow
+                    transition: width 200ms ease
+
+                &:hover::after
+                    width: 100%
+                    left: 0%
+
+        &__small
+            position: absolute
+            display: flex
+            align-items: center
+            flex-direction: column
+            height: 100vh
+            background-color: $headerBackground
+            top: 0
+            width: 80%
+
+            @media (min-width: 720px)
+                display: none
+
+            &__btn
+                background-color: rgba(0,0,0,0)
+                border: none
+                outline: none
+                color: white
+                @media ( min-width: 720px )
+                    display: none
+
+            &.closed
+                right: -80%
+                transition: right 400ms ease-in-out
+
+            &.open
+                right: 0
+                transition: right 400ms ease-in-out
+
+            &__item
+                margin: 20px 0
+                &:first-of-type
+                    margin: 200px 0 20px 0
 
     & a
         color: white
         font-weight: bold
         text-decoration: none
+        margin: auto 0
+        // height: 100%
 
     &__logo
         position: relative
-        margin: 0 0 0 5%
 
-    &__hamburger
-        position: relative
-        width: 35px
-        height: 28px
-        margin: 0 5% 0 0
 
-    &__line
-        position: absolute
-        height: 4px
-        width: 35px
-        background: white
-        transition: 0.5s
+// @media (min-width: 720px)
+//     .navbar
+//         & button
+//             display: none
 
-        @for $i from 0 through 2
-            &:nth-child(#{$i+1})
-                top: 12px * $i
+//         &__items
+//             &.closed
+//                 display: flex   
 
-        &.one.open
-            transform: translateY(12px) rotate(-45deg)
-        &.two.open
-            opacity: 0
-        &.three.open
-            transform: translateY(-12px) rotate(45deg)
-
-.splash
-    position: absolute
-    top: 40px
-    right: 40px
-    width: 1px
-    height: 1px
-
-    &:after
-        content: ""
-        position: absolute
-        z-index: -1
-        display: block
-        background-color: $smallNavbarBackground
-        border-radius: 50%
-        width: 200vmax
-        height: 200vmax
-        top: -100vmax
-        left: -100vmax
-
-        transform: scale(0)
-        transition: transform 0.7s cubic-bezier(0.755, 0.050, 0.855, 0.060)
-
-    &.open:after
-        transform: scale(1)
-
-@media (min-width: 720px)
-    .navbar
-        &__hamburger
-            display: none
-
-        &__items
-            position: static
-            display: flex
-            margin: 0 5% 0 0
-
-        &__item
-            padding: 0 1rem
-            font-size: 1.3rem
-
-        &__item
-            position: relative
-            color: white
-            font-weight: bold
-            cursor: pointer
-            text-decoration: none
-
-            &::after
-                content: ""
-                position: absolute
-                width: 0
-                height: 2px
-                bottom: 0
-                right: 0
-                background-color: $pageYellow
-                transition: width .2s ease
-
-            &:hover::after
-                width: 100%
-                left: 0%
+//             &__item
+//                 

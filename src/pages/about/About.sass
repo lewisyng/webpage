@@ -6,16 +6,25 @@
     flex-direction: column
 
     &__myself
-        height: 100%
-        margin: 3rem 0 5rem 0
-        padding: 0 5%
+        position: relative
+        padding: 10vw
+
+        &__information
+            width: 50%
+            max-width: 700px
+            @media (max-width: 750px)
+                width: 100%
 
         &__image
-            width: Min(90%, 300px)
-        
-        &__information
-            margin: 2rem 0 3rem 0
-            max-width: 700px
+            position: absolute
+            right: 10vw
+            bottom: 0px
+            height: 90%
+            z-index: -1
+            @media (max-width: 900px)
+                right: 0
+            @media (max-width: 750px)
+                display: none
 
     &__why
         display: flex
@@ -49,21 +58,13 @@
 .large
     font-weight: bold
     font-size: 2rem
+    margin: 1rem 0
 
 .medium
     font-weight: normal
     font-size: 1.5rem
     line-height: 1.5
+    margin: 1rem 0
 
-@media (min-width: 1000px)
-    .about__myself
-        display: flex
-
-        &__image
-            width: auto
-            height: 400px
-
-        &__information
-            margin: 0 0 0 3rem
 .contactBtn
-    margin: 2rem 0
+    margin: 2rem 0 3rem 0
