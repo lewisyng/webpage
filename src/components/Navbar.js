@@ -25,20 +25,22 @@ function Navbar() {
           ["/contact", "Kontakt"],
         ].map((item) => {
           return (
-            <div
-              className="navbar__items__large__item"
-              onClick={() => setToggleHamburger("closed")}
-            >
+            <div className="navbar__items__large__item">
               <Link to={item[0]}>{item[1]}</Link>
             </div>
           );
         })}
       </div>
+      
       <button
         className="navbar__items__small__btn"
         onClick={() => setToggleHamburger(!toggleHamburger)}
       >
-        {toggleHamburger === false ? <MenuIcon fontSize="large" /> : <CloseIcon fontSize="large" />}
+        {toggleHamburger === false ? (
+          <MenuIcon fontSize="large" />
+        ) : (
+          <CloseIcon fontSize="large" />
+        )}
       </button>
       <div
         className={`navbar__items__small ${
