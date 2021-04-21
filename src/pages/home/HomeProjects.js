@@ -2,6 +2,8 @@ import React from "react";
 import LinkButtons from "../../components/LinkButtons";
 import homeprojects from "../../js/homeprojects";
 import "./HomeProjects.sass";
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 function HomeProjects() {
   return (
@@ -10,7 +12,7 @@ function HomeProjects() {
       <div className="homeProjects">
         {homeprojects.map((item) => {
           return (
-            <div key={item.id} className={`hp__row ${item.size}`}>
+            <div data-aos="fade-up" key={item.id} className={`hp__row ${item.size}`}>
               <div
                 className="homeProjects__background"
                 style={{

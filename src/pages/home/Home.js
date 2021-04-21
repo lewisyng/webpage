@@ -2,6 +2,8 @@ import React from "react";
 import LinkButtons from "../../components/LinkButtons";
 import "./Home.sass";
 import HomeProjects from "./HomeProjects";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Home() {
   return (

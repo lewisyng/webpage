@@ -7,8 +7,10 @@ import Navbar from './components/Navbar'
 
 import { HashRouter, Route, Switch } from "react-router-dom";
 import Footer from './components/Footer';
+import Aos from 'aos';
 
 function App() {
+  Aos.init();
   return (
       <div className="app">
         <HashRouter>
