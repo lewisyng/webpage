@@ -1,5 +1,5 @@
 import React from "react";
-import LinkButtons from "../../components/LinkButtons";
+import LinkButtons from "../../components/LinkButton";
 import "./Contact.sass";
 
 function Contact() {

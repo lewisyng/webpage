@@ -3,9 +3,7 @@ import "./Navbar.sass";
 import Logo from "./Logo";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
-
 import { Link } from "react-router-dom";
-import SocialLinks from "./SocialLinks";
 
 function Navbar() {
   const [toggleHamburger, setToggleHamburger] = useState(false);
@@ -25,20 +23,22 @@ function Navbar() {
           ["/contact", "Kontakt"],
         ].map((item) => {
           return (
-            <div
-              className="navbar__items__large__item"
-              onClick={() => setToggleHamburger("closed")}
-            >
+            <div className="navbar__items__large__item">
               <Link to={item[0]}>{item[1]}</Link>
             </div>
           );
         })}
       </div>
+
       <button
         className="navbar__items__small__btn"
         onClick={() => setToggleHamburger(!toggleHamburger)}
       >
-        {toggleHamburger === false ? <MenuIcon fontSize="large" /> : <CloseIcon fontSize="large" />}
+        {toggleHamburger === false ? (
+          <MenuIcon fontSize="large" />
+        ) : (
+          <CloseIcon fontSize="large" />
+        )}
       </button>
       <div
         className={`navbar__items__small ${
