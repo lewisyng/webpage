@@ -7,9 +7,8 @@
     font-size: 1.3rem
     z-index: 10
     background-color: $headerBackground
-
-    position: relative
-    
+    position: absolute
+    width: 100%
 
     & button
         z-index: 100
@@ -46,18 +45,14 @@
                     left: 0%
 
         &__small
-            position: absolute
-            display: flex
-            align-items: center
-            flex-direction: column
-            height: 100vh
-            background-color: $headerBackground
+            height: 100%
+            width: 0
+            position: fixed
+            z-index: 1
             top: 0
-            width: 80%
-            transition: right 400ms ease-in-out
-
-            @media (min-width: 720px)
-                display: none
+            right: 0
+            background-color: $headerBackground
+            transition: 0.5s
 
             &__btn
                 background-color: rgba(0,0,0,0)
@@ -67,14 +62,13 @@
                 @media ( min-width: 720px )
                     display: none
 
-            &.closed
-                right: -80%
-
             &.open
-                right: 0
+                width: 100%
 
             &__item
                 margin: 20px 0
+                text-align: center
+                white-space: nowrap
                 &:first-of-type
                     margin: 200px 0 20px 0
 
@@ -86,3 +80,4 @@
 
     &__logo
         position: relative
+        z-index: 1000

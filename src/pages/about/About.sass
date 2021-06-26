@@ -4,10 +4,11 @@
     color: $textBright
     display: flex
     flex-direction: column
+    padding: 2rem 0 0 0
 
     &__myself
         position: relative
-        padding: 10vw
+        padding: 6rem 5% 4rem 5%
 
         &__information
             width: 50%
@@ -28,11 +29,10 @@
 
     &__why
         display: flex
-        justify-content: space-around
-        padding: 5rem 5% 3rem 5%
+        justify-content: space-between
+        padding: 7rem 5% 5rem 5%
         background-color: $secondaryBackgroundColor
         color: $textDark
-        font-size: 1.5rem
 
         @media (max-width: 800px)
             flex-direction: column
@@ -42,8 +42,7 @@
             @media (max-width: 800px)
                 text-align: left
                 width: 90%
-                font-size: 1.3rem
-        
+
         &__img
             max-width: 500px
             width: 100%
@@ -51,20 +50,10 @@
                 margin: 4rem 0 0 0
 
     &__techStack
-        background-color: $secondaryBackgroundColor
+        background-color: $btnYellow
         width: 100%
-        text-align: center
-
-.large
-    font-weight: bold
-    font-size: 2rem
-    margin: 1rem 0
-
-.medium
-    font-weight: normal
-    font-size: 1.5rem
-    line-height: 1.5
-    margin: 1rem 0
-
-.contactBtn
-    margin: 2rem 0 3rem 0
+        padding: 0 5% 3rem 5%
+        color: black
+        display: flex
+        flex-wrap: wrap
+        gap: 10px

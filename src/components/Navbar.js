@@ -3,9 +3,7 @@ import "./Navbar.sass";
 import Logo from "./Logo";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
-
 import { Link } from "react-router-dom";
-import SocialLinks from "./SocialLinks";
 
 function Navbar() {
   const [toggleHamburger, setToggleHamburger] = useState(false);
@@ -31,7 +29,7 @@ function Navbar() {
           );
         })}
       </div>
-      
+
       <button
         className="navbar__items__small__btn"
         onClick={() => setToggleHamburger(!toggleHamburger)}
